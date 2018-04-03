@@ -1,3 +1,11 @@
+//////////////////////////////
+// Md. Monir Hossain		//
+// Software Engineer		//
+// ausantemonir@gmail.com	//
+// github.com/sarkaromar	//
+// in/monirhossian/			//
+//////////////////////////////
+
 function initMap() {
     var lat = 23.7449458;
     var lng = 90.3889624;

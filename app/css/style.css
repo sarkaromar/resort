@@ -12,14 +12,89 @@ header {
   right: 0;
   z-index: 2; }
 
+.sector {
+  text-align: center;
+  margin-bottom: 30px; }
+  .sector .btn {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    text-transform: uppercase; }
+  .sector img {
+    width: 100%;
+    max-width: 100px; }
+  .sector h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0px; }
+  .sector p {
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0; }
+
+.gallery-wrapper a {
+  display: inline-block; }
+  .gallery-wrapper a img {
+    width: 190px;
+    padding: 5px;
+    float: left; }
+
+#galpop-content img {
+  vertical-align: top;
+  width: 100%; }
+
+.rooms ul {
+  margin: 0px;
+  padding: 0px; }
+  .rooms ul li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 15px;
+    background: #eee;
+    height: 200px; }
+    .rooms ul li h3 {
+      padding: 10px 0;
+      margin: 0px;
+      font-size: 24px; }
+    .rooms ul li h4 {
+      font-size: 20px;
+      padding: 10px 0; }
+    .rooms ul li img {
+      float: left;
+      margin-right: 20px;
+      width: 200px;
+      height: 200px; }
+
 .slider {
   position: relative; }
+  .slider .carousel-caption {
+    margin-bottom: 200px; }
+    .slider .carousel-caption .slider-cap {
+      background: rgba(247, 149, 33, 0.7);
+      display: inline-block;
+      padding: 25px;
+      margin-bottom: 30px; }
+      .slider .carousel-caption .slider-cap h1 {
+        font-size: 36px; }
+    .slider .carousel-caption .circle {
+      height: 200px;
+      width: 200px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: rgba(32, 132, 188, 0.7);
+      padding: 25px; }
   .slider .header-bottom {
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    z-index: 99; }
+    z-index: 15; }
+    @media (max-width: 575.98px) {
+      .slider .header-bottom {
+        position: relative;
+        margin-top: 15px;
+        z-index: 1; } }
 
 .page-title {
   padding-top: 25px; }
@@ -90,7 +165,8 @@ header {
 .main-nav {
   -webkit-transition: ease .5s;
   transition: ease .5s;
-  height: 81px; }
+  height: 81px;
+  background: rgba(0, 0, 0, 0.25); }
   @media (max-width: 575.98px) {
     .main-nav {
       background: none;
@@ -138,6 +214,9 @@ header {
         text-transform: uppercase;
         -webkit-transition: ease .5s;
         transition: ease .5s; }
+        @media (max-width: 575.98px) {
+          .main-nav ul li a {
+            padding: 15px; } }
         .main-nav ul li a:hover {
           color: #cccccc; }
 
@@ -202,8 +281,8 @@ header {
     transform: scale(1.025);
     -webkit-transition: ease 0.5s;
     transition: ease 0.5s;
-    -webkit-box-shadow: 0px 50px 25px -25px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 50px 25px -25px rgba(0, 0, 0, 0.75); }
+    -webkit-box-shadow: 0 35px 30px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 35px 30px -25px rgba(0, 0, 0, 0.75); }
   .card a {
     color: #2084bc;
     text-decoration: none; }
@@ -360,7 +439,12 @@ section.details-body {
     opacity: 1;
     color: #ffffff; }
     .services .service .over:hover {
-      opacity: 1; }
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.5);
+      left: 0;
+      right: 0;
+      top: -15px;
+      bottom: -15px; }
     .services .service .over .btn {
       -webkit-border-radius: 0;
       border-radius: 0; }
@@ -489,20 +573,37 @@ section.main-body {
     .logo-sub-page svg g.svg-logo {
       fill: #fff; }
 
+.nav-tabs {
+  border-bottom: 0px solid #ddd !important; }
+  .nav-tabs .nav-item {
+    margin: 0px !important; }
+  .nav-tabs .nav-link {
+    border: 0px solid transparent !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    padding: .5rem 2rem; }
+    .nav-tabs .nav-link:hover {
+      background: rgba(0, 0, 0, 0.5); }
+  .nav-tabs .nav-link.active {
+    background: rgba(0, 0, 0, 0.5) !important; }
+
 .search {
   text-align: center;
   padding: 25px;
   background: rgba(0, 0, 0, 0.5); }
   .search .input-group .form-control, .search .input-group .btn {
     height: 50px !important;
-    border: 1px solid #ffffff;
+    border: 1px solid #555;
     background: transparent;
     color: #ffffff; }
   .search .input-group .btn {
     width: 120px; }
   .search h1 {
-    text-align: center;
-    font-size: 36px;
+    text-align: left;
+    font-size: 22px;
     padding-bottom: 15px;
     margin: 0px;
     text-transform: uppercase;
