@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.galpop.css">
     <!-- fontawesome -->
     <script defer src="js/fa.js"></script>
 </head>
@@ -71,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="profile-pic">
-                        <img src="images/kazioffice.png" alt="">
+                        <img src="images/kazi.png" alt="">
                     </div>
                     <div class="left-nav">
                         <h3 class="profile-name d-n">Kazi's Full name <span><i class="fas fa-check-circle"></i></span>
@@ -110,15 +111,14 @@
                                     13/A, Sonargaon Road, Banglamotor, Dhaka
                                 </p>
                             </div>
-                            
                             <div class="link">
-                                    <ul>
-                                        <li><a href="#"><i class="fas fa-link"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-link"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                 </div>
                 <div class="col-lg-9">
@@ -127,29 +127,19 @@
                         <i class="fas fa-bars"></i>
                     </div>
                     <div class="sub-nav">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li><a class="active" href="#home"><i class="fas fa-home"></i></a></li>
-                            <li><a class="" href="#services">Services</a></li>
-                            <li><a class="" href="#gallery">Gallery</a></li>
-                            <li><a class="" href="#pricing">Pricing</a></li>
-                            <li><a class="" href="#work">Work</a></li>
-                            <li><a class="" href="#review">Review</a></li>
-                            <li><a class="" href="#contact">Contact</a></li>
-                            <li><a class="" href="#location">Location map</a></li>
-                        </ul>
+                        <h4 class="update-title">Work update</h4>
                     </div>
                     <div class="sub-body">
                             <div class="sub-body-contant">
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel">Home</div>
-                                    <div class="tab-pane fade" id="services" role="tabpanel">Services</div>
-                                    <div class="tab-pane fade" id="gallery" role="tabpanel">Gallery</div>
-                                    <div class="tab-pane fade" id="pricing" role="tabpanel">Pricing</div>
-                                    <div class="tab-pane fade" id="work" role="tabpanel">Work</div>
-                                    <div class="tab-pane fade" id="review" role="tabpanel">Review</div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel">Contact</div>
-                                    <div class="tab-pane fade" id="location" role="tabpanel">Location</div>
-                                </div>
+                                <form action="user-panel.html">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputEmail4" class="col-form-label">Work</label>
+                                            <textarea class="form-control" name="" id="" cols="150" rows="12" width="100%"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-lg">Update</button>
+                                </form>
                             </div>
                         </div>
                 </div>
@@ -258,11 +248,20 @@
   <script src="js/jquery.sticky.js"></script>
 
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.galpop.min.js"></script>
 
   <script>
     $(document).ready(function(){
 
+        // $('.btn-enable').click(function(){
+        //     $("input").prop('disabled', true);
+        //     $("input").prop('disabled', false);
+        // });
+
+
         new WOW().init();
+
+        $('.galpop-info').galpop();
 
         $('.carousel').carousel();
 
@@ -292,7 +291,6 @@
         
     });
   </script>
-
 
 
 </body>

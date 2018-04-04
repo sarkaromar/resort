@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Find a Resort</title>
+    <title>Find a Kazi</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.galpop.css">
     <!-- fontawesome -->
     <script defer src="js/fa.js"></script>
 </head>
 <body>
-  <header id="header">
+<header id="header" class="parallax-window">
     <div class="top-nav">
       <div class="container">
           <div class="float-left">
@@ -44,113 +45,108 @@
         <div class="overly"></div>
         <div class="container">
             <ul>
-            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="resort.html">Resorts</a></li>
-            <li><a href="park.html">Park</a></li>
-            <li><a href="spot.html">Spot</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="how-to.html"><i class="fa fa-question-circle"></i> HOW TO</a></li>
-            <li><a href="contact.html">contact us</a></li>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="kazi-list.html">Kazi</a></li>
+                <li><a href="kazi-office-list.html">Kazi offce</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="how-to.html"><i class="fa fa-question-circle"></i> HOW TO</a></li>
+                <li><a href="contact.html">contact us</a></li>
             </ul>
         </div>
         </div>
     </div>
-
-  </header>
-  <section class="slider">
-    <div class="page-title">
+    <div class="details-page-title">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    
-                    <h2>Services</h2>
-                                     
                 </div>
             </div>
         </div>
     </div>
-  </section>
-
-  <section class="main-body">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="welcome wow zoomIn">
-                    <h2>Welcome to find a kazi</h2>
-                    <p>      
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe incidunt suscipit vero error, harum repellendus doloremque minima mollitia eaque ullam dolor animi quos dolores corporis quae sint veniam cupiditate?</span>
-                        <span>Voluptas nihil voluptates culpa. Quod natus laboriosam architecto veritatis quis corporis in sapiente voluptatem labore laudantium, eaque delectus facere quisquam a odit facilis aut, dolore omnis accusantium. Reiciendis, molestias dolor.</span>
-                        <span>Id ea a debitis minima deleniti soluta, voluptate eligendi possimus ipsam, sit est nemo expedita culpa doloribus dolores eum iure eaque voluptatem voluptates obcaecati? Iure et in ea eveniet. Quibusdam.</span>
-                    </p>
+    </header>
+    
+    <section class="details-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="profile-pic">
+                        <img src="images/kazi.png" alt="">
                     </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="brand-slider">
-            <div class="container">
-              <div class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        
-                            <div class="col-lg-1"></div>
-                            <div class="col-lg-2">
-                                    <img class="" src="images/prt1.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt2.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt3.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt4.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt5.png" alt="Second slide">
+                    <div class="left-nav">
+                        <h3 class="profile-name d-n">Kazi's Full name <span><i class="fas fa-check-circle"></i></span>
+                            <hr>
+                        </h3>
+                            <div class="rating">
+                                Rating: 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="col-lg-1"></div>
-                          </div>
+                            <hr>
+                            <p class="contact-no">
+                                <i class="fas fa-phone"></i> 0123 456 789
+                            </p>
+                            <hr>
+                            <div class="business-hr">
+                                <i class="fas fa-clock"></i> Business Hour <br>
+                                <table width="100%">
+                                        <tr>
+                                            <td width="50%">Sun - Thu</td>
+                                            <td width="50%">: 10AM - 08PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fri - Sat</td>
+                                            <td>: 03PM - 08PM</td>
+                                        </tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <p class="address">
+                                    <i class="fa fa-map-marker-alt"></i> Address <br>
+                                    13/A, Sonargaon Road, Banglamotor, Dhaka
+                                </p>
+                            </div>
+                            <div class="link">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-link"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                          <div class="row">
-                              <div class="col-lg-1"></div>
-                              <div class="col-lg-2">
-                                    <img class="" src="images/prt1.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt2.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt3.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt4.png" alt="Second slide">
-                                  </div>
-                                  <div class="col-lg-2">
-                                    <img class="" src="images/prt5.png" alt="Second slide">
-                              </div>
-                              <div class="col-lg-1"></div>
-                          </div>
+                </div>
+                <div class="col-lg-9">
+                    <h3 class="profile-name d-b">Kazi's Full name <span><i class="fas fa-check-circle"></i></span></h3>
+                    <div class="res-subnav">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="sub-nav">
+                        <h4 class="update-title">Price update</h4>
+                    </div>
+                    <div class="sub-body">
+                            <div class="sub-body-contant">
+                                <form action="user-panel.html">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="inputEmail4" class="col-form-label">Price</label>
+                                            <textarea class="form-control" name="" id="" cols="150" rows="12" width="100%"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-lg">Update</button>
+                                </form>
+                            </div>
                         </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>             
-              </div>
+                </div>
             </div>
-        </section>
+            
+        </div>
+    </section>
 
   <section class="q-contact sucscribe">
     <div class="container">
@@ -192,9 +188,8 @@
         <div class="col-lg-3">
             <h3>QUICK LINK</h3>
             <ul>
-                <li><a href="resort.html">Resort</a></li>
-                <li><a href="park.html">Park</a></li>
-                <li><a href="spot.html">Spot</a></li>
+                <li><a href="kazi-list.html">KAZI</a></li>
+                <li><a href="kazi-office-list.html">KAZI OFFICE</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="registration.html">REGISTRATION</a></li>
                 <li><a href="how-to.html">HOW TO</a></li>
@@ -253,19 +248,27 @@
   <script src="js/jquery.sticky.js"></script>
 
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.galpop.min.js"></script>
 
   <script>
     $(document).ready(function(){
 
+        // $('.btn-enable').click(function(){
+        //     $("input").prop('disabled', true);
+        //     $("input").prop('disabled', false);
+        // });
+
+
         new WOW().init();
+
+        $('.galpop-info').galpop();
 
         $('.carousel').carousel();
 
         $(".sticker").sticky({topSpacing:0});
 
         $('.parallax-window').parallax({imageSrc: 'images/header-bg.jpg'});
-        $('.parallax-window2').parallax({imageSrc: 'images/slider/10.jpg'});
-        $('.slider').parallax({imageSrc: 'images/slider/1.jpg'});
+        $('.parallax-window2').parallax({imageSrc: 'images/test.jpg'});
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
@@ -281,10 +284,13 @@
             }, 600);
             return false;
         });
+        $('#myTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
         
     });
   </script>
-
 
 
 </body>
